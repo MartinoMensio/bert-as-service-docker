@@ -6,7 +6,7 @@ Simple docker container for the `bert-serving-server`
 
 ## Build
 
-`docker build -t martinomensio/bert-serving-server .`
+`docker build -t martinomensio/bert-serving-server:1.1 .`
 
 ## Run
 

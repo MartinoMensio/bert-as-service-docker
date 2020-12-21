@@ -12,7 +12,10 @@ set -e
 #   -max_batch_size 16 \
 #   -verbose
 
+# max_seq_len: Set it to NONE for dynamically using the longest sequence in a (mini)batch.
+
 bert-serving-start \
-    -model_dir models/english_L-12_H-768_A-12/ \
     -num_worker=1 \
-    -model_dir=models/uncased_L-12_H-768_A-12
+    -max_seq_len=512 \
+    -model_dir models/uncased_L-12_H-768_A-12
+# -cpu \
